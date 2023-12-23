@@ -30,8 +30,11 @@ int main() {
 	now2 = &start ;
 	
 	GoNext1( &now1 ) ;
- 	printf( "%s ", now1->name ) ;
-	printf( "%s\n", ( *now2 )->name ) ;
+ 	printf( "%s \n", now1->name ) ;
+	// printf( "%s\n", ( *now2 )->name ) ;
+	printf( " %d \n", now1->age ) ;
+	printf( " %c \n", now1->sex ) ;
+	printf( " %.2f \n", now1->gpa ) ;
 
 	return 0 ;
 }//end function
