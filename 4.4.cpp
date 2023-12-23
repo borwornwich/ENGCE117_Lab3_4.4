@@ -29,16 +29,9 @@ int main() {
 	now1 = start ;
 	now2 = &start ;
 	
-	while ( now1 != NULL ) {
-		printf( " %s \n", now1->name ) ;
-		printf( " %d \n", now1->age ) ;
-		printf( " %c \n", now1->sex ) ;
-		printf( " %.2f \n", now1->gpa ) ;
-		printf( "\n" ) ;
-		
-		GoNext1( now2 ) ;
-		now1 = *now2 ;
-	}
+	GoNext1( &now1 ) ;
+ 	printf( "%s ", now1->name ) ;
+	printf( "%s\n", ( *now2 )->name ) ;
 
 	return 0 ;
 }//end function
